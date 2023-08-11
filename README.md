@@ -20,27 +20,33 @@ This repository has 2 independent branches for each of the case studies:
 ### Running the TaxiNet Case Study
 ```
 git checkout TaxiNet
+git submodule init && git submodule update
 ```
 This will take you to the TaxiNet branch.
 
 ### Running the Learning Based Waypoint Navigation Case Study
 ```
 git checkout WayptNav
+git submodule init && git submodule update
 ```
 This will take you to the WayptNav branch.
 
 
-### Each branch has an independent Readme for setting up the code. Please follow the respective instructions to proceed further.
+### Each branch has their independent Readme for setting up the code. Please follow the respective instructions to proceed further.
 
 
 ## Citation
 If you find our work useful in your research, please cite:
 ```
-@article{chakraborty2022discovering,
+@article{chakraborty2023discovering,
   title={Discovering Closed-Loop Failures of Vision-Based Controllers via Reachability Analysis},
   author={Chakraborty, Kaustav and Bansal, Somil},
-  journal={arXiv preprint arXiv:2211.02736},
-  year={2022}
+  journal={IEEE Robotics and Automation Letters},
+  volume={8},
+  number={5},
+  pages={2692--2699},
+  year={2023},
+  publisher={IEEE}
 }
 ```
 
