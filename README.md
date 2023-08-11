@@ -84,11 +84,15 @@ vis_BRT.m
 ## Citation
 If you find our work useful in your research, please cite:
 ```
-@article{chakraborty2022discovering,
+@article{chakraborty2023discovering,
   title={Discovering Closed-Loop Failures of Vision-Based Controllers via Reachability Analysis},
   author={Chakraborty, Kaustav and Bansal, Somil},
-  journal={arXiv preprint arXiv:2211.02736},
-  year={2022}
+  journal={IEEE Robotics and Automation Letters},
+  volume={8},
+  number={5},
+  pages={2692--2699},
+  year={2023},
+  publisher={IEEE}
 }
 ```
 
