@@ -21,32 +21,4 @@ uOpt{1} = obj.speed;
 uOpt{2} = obj.ang_vel;
 uOpt{3} = obj.acc;
 uOpt{4} = obj.ang_acc;
-
-%% Optimal control
-% if strcmp(uMode, 'max')
-%   if any(obj.dims == 4)
-%     uOpt{1} = (deriv{obj.dims==4}>=0)*obj.aRange(2) + ...
-%       (deriv{obj.dims==4}<0)*obj.aRange(1);
-%   end
-%   
-%   if any(obj.dims == 5)
-%     uOpt{2} = (deriv{obj.dims==5}>=0)*(obj.alphaMax) + ...
-%       (deriv{obj.dims==5}<0)*(-obj.alphaMax);
-%   end
-% 
-% elseif strcmp(uMode, 'min')
-%   if any(obj.dims == 4)
-%     uOpt{1} = (deriv{obj.dims==4}>=0)*obj.aRange(1) + ...
-%       (deriv{obj.dims==4}<0)*obj.aRange(2);
-%   end
-%   
-%   if any(obj.dims == 5)
-%     uOpt{2} = (deriv{obj.dims==5}>=0)*(-obj.alphaMax) + ...
-%       (deriv{obj.dims==5}<0)*(obj.alphaMax);
-%   end
-% else
-%   error('Unknown uMode!')
-% end
-% uOpt{1} = zeros(11,11,11,11,11);
-% uOpt{2} = zeros(11,11,11,11,11);
 end
