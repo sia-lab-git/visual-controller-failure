@@ -17,58 +17,6 @@ if ~iscell(deriv)
 end
 
 dOpt = cell(obj.nd, 1);
-
-%% Optimal disturbance
-% if strcmp(dMode, 'max')
-%   if any(obj.dims == 1)
-%     dOpt{1} = (deriv{obj.dims==1}>=0)*obj.dMax(1) + ...
-%       (deriv{obj.dims==1}<0)*(-obj.dMax(1));
-%   end
-%   
-%   if any(obj.dims == 2)
-%     dOpt{2} = (deriv{obj.dims==2}>=0)*obj.dMax(2) + ...
-%       (deriv{obj.dims==2}<0)*(-obj.dMax(2));
-%   end
-%   
-%   if any(obj.dims == 4)
-%     dOpt{3} = (deriv{obj.dims==3}>=0)*obj.dMax(3) + ...
-%       (deriv{obj.dims==3}<0)*(-obj.dMax(3));
-%   end
-%   
-%   if any(obj.dims == 5)
-%     dOpt{4} = (deriv{obj.dims==4}>=0)*obj.dMax(4) + ...
-%       (deriv{obj.dims==4}<0)*(-obj.dMax(4));
-%   end  
-% 
-% elseif strcmp(dMode, 'min')
-%   if any(obj.dims == 1)
-%     dOpt{1} = (deriv{obj.dims==1}>=0)*(-obj.dMax(1)) + ...
-%       (deriv{obj.dims==1}<0)*obj.dMax(1);
-%   end
-%   
-%   if any(obj.dims == 2)
-%     dOpt{2} = (deriv{obj.dims==2}>=0)*(-obj.dMax(2)) + ...
-%       (deriv{obj.dims==2}<0)*obj.dMax(2);
-%   end
-%   
-%   if any(obj.dims == 4)
-%     dOpt{3} = (deriv{obj.dims==3}>=0)*(-obj.dMax(3)) + ...
-%       (deriv{obj.dims==3}<0)*obj.dMax(3);
-%   end
-%   
-%   if any(obj.dims == 5)
-%     dOpt{4} = (deriv{obj.dims==4}>=0)*(-obj.dMax(4)) + ...
-%       (deriv{obj.dims==4}<0)*obj.dMax(4);
-%   end  
-%   
-% else
-%   error('Unknown dMode!')
-% end
-% 
-% dOpt{1} = zeros(25,25,25,6,6);
-% dOpt{2} = zeros(25,25,25,6,6);
-% dOpt{3} = zeros(25,25,25,6,6);
-% dOpt{4} = zeros(25,25,25,6,6);
 dOpt{1} = 0;
 dOpt{2} = 0;
 dOpt{3} = 0;
