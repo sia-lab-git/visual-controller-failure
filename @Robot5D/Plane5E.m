@@ -1,4 +1,4 @@
-classdef Plane5E < DynSys
+classdef Robot5D < DynSys
   properties
     % Angular control bounds
 %     alphaMax
@@ -20,7 +20,7 @@ classdef Plane5E < DynSys
   end
   
   methods
-    function obj = Plane5E(x, u1, u2, u3, u4)
+    function obj = Robot5D(x, u1, u2, u3, u4)
       % obj = Plane5D(x, wMax, aRange, dMax, dims)
       %     Dynamics of the Plane5D
       %         \dot{x}_1 = x_4 * cos(x_3) + d_1 (x position)
